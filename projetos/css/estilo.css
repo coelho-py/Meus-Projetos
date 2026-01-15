@@ -1,0 +1,142 @@
+:root{
+    --corfundo: #131212;
+    --corPrincipal: #131212;
+    --corfonte: #beb6b6;
+    --corsegundo: #604499;
+    --corterceiro: #202020;
+}
+
+body{
+    background-color: var(--corfundo);
+    color: var(--corfonte);
+}
+
+.imagem{
+    filter: blur(10px);
+}
+
+.corpoimagem > img{
+    color: white;
+    position: absolute;
+    margin-top: 250px;
+    z-index:9999
+}
+
+.corpoimagem > p{
+    margin: 80px;
+    color: white;
+    text-shadow: 1px 1px 4px;
+    font-size: 70px;
+    position: absolute;
+    z-index:9999
+}
+
+.corpoimagem > h6{
+    color: white;
+    position: absolute;
+    top: 23em;
+    left: 10em;
+    z-index:9999
+}
+
+.hud{
+    background-color: var(--corPrincipal);
+    align-content: center;
+    width: 100%;
+    height: 60px;
+    display: block;
+    text-align: center;
+}
+
+a{  
+    text-decoration: none;
+    color: var(--corsegundo);
+}
+
+button{
+    height: 25px;
+    width: 175px;
+    border-radius: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--corfonte);
+}
+.projetos{
+    background-color: var(--corPrincipal);
+    width: 96%;
+    margin-left: 2%;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+  
+.collumn{
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+  
+.fotos > img{
+    width: 600px;
+    height: 250px;
+}
+
+.projeto{
+    width: 550px;
+    margin-top: 25px;
+    height: auto;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--corsegundo);
+}
+.content::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.contaner{
+    background-color: var(--corterceiro);
+    width: 100%;
+}
+
+.primeira{
+    margin-bottom: 105px;
+}
+
+.topnav {
+    margin-left: 675px;
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  footer{
+    background-color: var(--corterceiro);
+  }
